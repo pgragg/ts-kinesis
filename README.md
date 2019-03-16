@@ -1,10 +1,12 @@
-# Copied from 
+# Copied from
+
 https://developer.okta.com/blog/2018/11/15/node-express-typescript
 
-Currently on "Now, update src/index.ts to use dotenv to configure the application server port value." 
+Currently on "Note: If you changed the database administrator password, be sure to replace the default p@ssw0rd42 with that password in this file."
 
 # Docker kinesis
-[![](https://badge.imagelayers.io/vsouza/kinesis-local:latest.svg)](https://imagelayers.io/?images=vsouza/kinesis-local:latest 'Get your own badge on imagelayers.io')
+
+[![](https://badge.imagelayers.io/vsouza/kinesis-local:latest.svg)](https://imagelayers.io/?images=vsouza/kinesis-local:latest "Get your own badge on imagelayers.io")
 [![Docker Pulls](https://img.shields.io/docker/pulls/vsouza/kinesis-local.svg)](https://hub.docker.com/r/vsouza/kinesis-local/)
 
 Build for AWS Kinesis local.
@@ -18,19 +20,18 @@ You'll create data-processing applications, known as Amazon Kinesis applications
 
 ## What it uses
 
- * __NodeJS__ with Node Package Manager
- * __[Kinesalite](https://github.com/mhart/kinesalite)__ - thanks to [@mhart](http://www.github.com/mhart) to make it possible.
+- **NodeJS** with Node Package Manager
+- **[Kinesalite](https://github.com/mhart/kinesalite)** - thanks to [@mhart](http://www.github.com/mhart) to make it possible.
 
+**to start your local Kinesis, run:**
 
-__to start your local Kinesis, run:__
+`docker run -d -p 4567:4567 vsouza/kinesis-local --port 4567`
 
-`docker run -d -p 4567:4567  vsouza/kinesis-local --port 4567`
+_Feel free to add parameters: ( see Kinesalite [doc](https://github.com/mhart/kinesalite) )_
 
-*Feel free to add parameters: ( see Kinesalite [doc](https://github.com/mhart/kinesalite) )* 
+`docker run -d -p 4567:4567 vsouza/kinesis-local --port 4567 --createStreaMs 5`
 
-`docker run -d -p 4567:4567  vsouza/kinesis-local --port 4567 --createStreaMs 5`
-
-__to start kinesis inside compose, create docker-compose.yaml:__
+**to start kinesis inside compose, create docker-compose.yaml:**
 
 ```
 version: '3.1'
