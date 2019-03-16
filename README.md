@@ -1,3 +1,6 @@
+# Copied from 
+https://developer.okta.com/blog/2018/11/15/node-express-typescript
+
 # Docker kinesis
 [![](https://badge.imagelayers.io/vsouza/kinesis-local:latest.svg)](https://imagelayers.io/?images=vsouza/kinesis-local:latest 'Get your own badge on imagelayers.io')
 [![Docker Pulls](https://img.shields.io/docker/pulls/vsouza/kinesis-local.svg)](https://hub.docker.com/r/vsouza/kinesis-local/)
